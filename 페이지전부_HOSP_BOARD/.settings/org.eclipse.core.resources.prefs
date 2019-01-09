@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/cust_service/faq.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/cust_service/notice.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/cust_service/qa.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_rating/createRating.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_rating/ratingGuide.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_rating/topRating.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_search/favHosp.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_search/reserveGuide.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_search/searchGuide.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hosp_search/searchHosp.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/mypage/mypage.jsp=UTF-8
+encoding/<project>=UTF-8
