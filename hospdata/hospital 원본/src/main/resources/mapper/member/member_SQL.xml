@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+
+<select id="selectMemberList" parameterType="hashmap" resultType="hashmap">
+        <![CDATA[
+            SELECT
+                ID,
+                NAME,
+                PWD,
+                MMS_CHK,
+                PHONE,
+                EMAIL,
+                ADDR,
+                HEIGHT,
+                WEIGHT,
+                B_TYPE,
+                BANK_NO,
+                JUMIN,
+                JOINDATE,
+                ID_IMG                   
+            FROM
+                MEMBER
+            WHERE
+                DEL_CHK ='0'
+            ORDER BY ID DESC
+        ]]>
+    </select>
+
+<insert id="insertMember" parameterType="hashmap">
+	<![CDATA[
+		INSERT INTO MEMBER
+			(
+			ID, 
+			NAME, 
+			PWD, 
+			MMS_CHK, 
+			PHONE, 
+			EMAIL, 
+			ADDR, 
+			ADDR_GPS, 
+			HEIGHT, 
+			WEIGHT, 
+			B_TYPE, 
+			BANK_NO, 
+			JUMIN, 
+			JOINDATE, 
+			LOGINDATE, 
+			ID_IMG, 
+			ID_SESSIONK, 
+			ID_SESSIONL 
+			) 
+			VALUES (
+			#{ID}, 
+			#{NAME}, 
+			#{PWD}, 
+			#{MMS_CHK}, 
+			#{PHONE}, 
+			#{EMAIL}, 
+			#{ADDR}, 
+			#{ADDR_GPS}, 
+			#{HEIGHT}, 
+			#{WEIGHT}, 
+			#{B_TYPE}, 
+			#{BANK_NO}, 
+			#{JUMIN}, 
+			#{SYSDATE}, 
+			#{SYSDATE}, 
+			#{ID_IMG}, 
+			#{ID_SESSIONK}, 
+			#{ID_SESSIONL} 			
+			)
+	]]>
+</insert>
+
+
+
+</mapper>
