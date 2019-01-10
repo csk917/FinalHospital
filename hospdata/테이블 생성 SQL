@@ -33,7 +33,51 @@ COMMENT ON COLUMN MEMBER.ID_IMG IS '프로필 사진';
 COMMENT ON COLUMN MEMBER.ID_SESSIONK IS '로그인 세션 정보 저장';
 COMMENT ON COLUMN MEMBER.ID_SESSIONL IS '로그인 세션 유지 날짜';
 
-
+<insert id="insertMember" parameterType="hashmap">
+	<![CDATA[
+		INSERT INTO MEMBER
+			(
+			ID, 
+			NAME, 
+			PWD, 
+			MMS_CHK, 
+			PHONE, 
+			EMAIL, 
+			ADDR, 
+			ADDR_GPS, 
+			HEIGHT, 
+			WEIGHT, 
+			B_TYPE, 
+			BANK_NO, 
+			JUMIN, 
+			JOINDATE, 
+			LOGINDATE, 
+			ID_IMG, 
+			ID_SESSIONK, 
+			ID_SESSIONL 
+			) 
+			VALUES (
+			#{ID}, 
+			#{NAME}, 
+			#{PWD}, 
+			#{MMS_CHK}, 
+			#{PHONE}, 
+			#{EMAIL}, 
+			#{ADDR}, 
+			#{ADDR_GPS}, 
+			#{HEIGHT}, 
+			#{WEIGHT}, 
+			#{B_TYPE}, 
+			#{BANK_NO}, 
+			#{JUMIN}, 
+			#{SYSDATE}, 
+			#{SYSDATE}, 
+			#{ID_IMG}, 
+			#{ID_SESSIONK}, 
+			#{ID_SESSIONL} 			
+			)
+	]]>
+</insert>
 
 ALTER TABLE MEMBER MODIFY(BANK_NO VARCHAR2(20));
 ALTER TABLE MEMBER ADD DEL_CHK NUMBER(1) DEFAULT 0;
