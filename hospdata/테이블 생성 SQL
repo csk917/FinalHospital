@@ -150,3 +150,25 @@ BEGIN
     VALUES(SEQ_MEMBER_IDX.NEXTVAL, 'ID'||i, '이름'||i, '암호'||i, 1, 010||i, '이메일'||i, '주소 '||i, 111.||i, i, i, A, 11432||li, 920101||li, SYSDATE, SYSDATE, i, '123', SYSDATE, 0);
     END LOOP;
 END;
+
+BEGIN
+    FOR i IN 100..200 LOOP
+    INSERT INTO member(IDX, ID, NAME, PWD, MMS_CHK, PHONE, EMAIL, ADDR, ADDR_GPS, HEIGHT, WEIGHT, B_TYPE, BANK_NO, JUMIN, JOINDATE, LOGINDATE, ID_IMG, ID_SESSIONK, ID_SESSIONL, DEL_CHK) 
+    VALUES(SEQ_MEMBER_IDX.NEXTVAL, 'ID'||i, '이름'||i, '암호'||i, 1, 010||i, '이메일'||i, '주소 '||i, 111.||i, i, i, A, 11432||li, 920101||li, SYSDATE, SYSDATE, i, SYSDATE, SYSDATE, 0);
+    END LOOP;
+END;
+
+취업
+
+-- 직무 역량 강조! 
+-- 조직 적응력 강조!
+
+개발 직무
+SM SYSTEM MAINTENANCE 개발 유지 보수
+SI SYSTEM INTEGRATION 정보 시스템 개발 구축, 운영 서비스 제공. --> 다양한 개발 언어, 프로젝트 경력관리 가능.  
+SOLUTION 운영 프로그램 관련 문제 해결  , 연구개발 부분강화. 
+
+--청년내일채움공제가 안되는 기업도 있다. 기업과 개인이 같이 해야한다. 
+- 연봉 회사 내규 따름~~
+
+1/18 금요일까지 입사지원서 제출 오후 5시!!! 사진 부착!!
